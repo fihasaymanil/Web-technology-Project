@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="reg.css">
+</head>
+</head>
+<body>
+
+    <p>Khan Academy Student Registration Form</p>
+    
+    <form id="registrationForm" action="/action_page.php">
+
+        <label for="sname">Student Name:</label><br>
+        <input type="text" id="sname" name="sname" placeholder="Enter your name"><br><br>
+
+        <label for="fname">Father's Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter father's name"><br><br>
+
+        <label for="mname">Mother's Name:</label><br>
+        <input type="text" id="mname" name="mname" placeholder="Enter mother's name"><br><br>
+
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+        <br><br>
+
+        <label for="blood">Blood Group:</label><br>
+        <select id="blood" name="blood">
+            <option value="">Select Blood Group</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>O+</option>
+            <option>O-</option>
+        </select><br><br>
+
+        <select id="class" name="class">
+    <option value="">Select Class</option>
+    <option value="One">One</option>
+    <option value="Two">Two</option>
+    <option value="Three">Three</option>
+    <option value="Four">Four</option>
+    <option value="Five">Five</option>
+    <option value="Six">Six</option>
+    <option value="Seven">Seven</option>
+    <option value="Eight">Eight</option>
+    <option value="Nine">Nine</option>
+    <option value="Ten">Ten</option>
+</select>
+
+        <label for="section">Section:</label><br>
+        <select id="section" name="section">
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="01XXXXXXXXX"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="30" placeholder="Enter your address"></textarea><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="confirm">Confirm Password:</label><br>
+        <input type="password" id="confirm" name="confirm"><br><br>
+
+        <div class="button-group">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+</div>
+
+    </form>
+<script src="reg.js"></script>
+<section class="back">
+<a href="index.html">Go Back to Home Page</a>
+</section>
+
+</body>
+</html>
